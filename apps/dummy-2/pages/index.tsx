@@ -1,8 +1,9 @@
+import { Box } from "@chakra-ui/react";
 import { Button, Header } from "@zoomable/ui";
 
 export default function DummyOne() {
   return (
-    <div>
+    <Box>
       <Header
         user={{ name: "dummy 1" }}
         onLogin={() => console.log("log in")}
@@ -10,6 +11,6 @@ export default function DummyOne() {
         onCreateAccount={() => console.log("create account")}
       />
       <Button label="Button" />
-    </div>
+    </Box>
   );
 }
