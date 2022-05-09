@@ -1,10 +1,15 @@
-import { Button } from "@zoomable/ui";
+import { Button, Header } from "@zoomable/ui";
 
 export default function DummyOne() {
   return (
     <div>
-      <h1>Dummy 1</h1>
-      <Button>Dummy button</Button>
+      <Header
+        user={{ name: "dummy 1" }}
+        onLogin={() => console.log("log in")}
+        onLogout={() => console.log("log out")}
+        onCreateAccount={() => console.log("create account")}
+      />
+      <Button label="Button1" />
     </div>
   );
 }
