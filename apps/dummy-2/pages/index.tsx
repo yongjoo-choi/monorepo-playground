@@ -10,7 +10,7 @@ export default function DummyTwo() {
         onLogout={() => console.log("log out")}
         onCreateAccount={() => console.log("create account")}
       />
-      <Button label="Button!!!" />
+      <Button label="Remote Cache" />
     </Box>
   );
 }
