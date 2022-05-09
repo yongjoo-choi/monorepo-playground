@@ -1,8 +1,10 @@
-import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import { Button } from "ui";
 
-const Home: NextPage = () => {
-  return <div className={styles.container}>dummy project - 2</div>;
-};
-
-export default Home;
+export default function DummyOne() {
+  return (
+    <div>
+      <h1>Dummy 2</h1>
+      <Button>Dummy button</Button>
+    </div>
+  );
+}
